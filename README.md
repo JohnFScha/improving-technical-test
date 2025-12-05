@@ -1,8 +1,3 @@
-# Prueba Técnica - Improving
-
-
-Aplicación de gestión de productos desarrollada con React, TypeScript y Vite.
-
 <div align="center">
   <img src="https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -16,6 +11,10 @@ Aplicación de gestión de productos desarrollada con React, TypeScript y Vite.
   <img src="https://img.shields.io/badge/ESLint-9.39.1-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
   <img src="https://img.shields.io/badge/pnpm-Latest-F69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm" />
 </div>
+
+# Prueba Técnica - Improving
+
+Aplicación de gestión de productos desarrollada con React, TypeScript y Vite.
 
 ## 🚀 Cómo arrancar el proyecto
 
