@@ -33,6 +33,10 @@ pnpm build
 pnpm preview
 ```
 
+## URL de la aplicación desplegada
+Se ha desplegado la aplicación en Netlify y se puede acceder a través del siguiente enlace:
+- [Ver en Netlify](https://improving-technical-test.netlify.app/)
+
 ## 🏗️ Decisiones Técnicas Importantes
 
 ### Arquitectura de Componentes
