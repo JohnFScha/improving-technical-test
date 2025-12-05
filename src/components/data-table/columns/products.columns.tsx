@@ -16,7 +16,9 @@ import { Badge } from "@/components/ui/badge.tsx"
 import ProductDetailModal from "@/components/modals/product-detail.tsx"
 
 /**
- * Definicion de las columnas para la tabla de productos.
+ * Función que genera las definiciones de columnas para la tabla de productos.
+ * @param toggleFavorite Función para alternar el estado de favorito de un producto.
+ * @param favorites Lista de productos marcados como favoritos.
  * @return Un array de definiciones de columnas para la tabla de productos.
  */
 export const columnsFactory = ({
