@@ -70,6 +70,7 @@ Se ha desplegado la aplicación en Netlify y se puede acceder a través del sigu
 7. **Documentación**: Añadir Storybook para documentar los componentes UI.
 8. **Caché de datos**: Implementar React Query o SWR para caché y revalidación de datos.
 9. **Ruteo avanzado**: Añadir rutas protegidas y autenticación si la aplicación lo requiere.
+10. **Estado global**: Implementar un manejo de estado global más robusto si la aplicación crece (redux toolkit, zustand, jotai).
 
 ## 📁 Estructura del Proyecto
 
