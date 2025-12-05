@@ -4,6 +4,11 @@ import { Lightbulb, LightbulbOff } from "lucide-react";
 import { Button } from "../ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
+/**
+ * Componente para alternar entre el modo claro y oscuro de la aplicacion.
+ * Consume el hook useTheme para gestionar el estado del tema.
+ * @returns El componente ThemeToggler.
+ */
 export function ThemeToggler() {
   const { theme, setTheme } = useTheme();
   const [isLight, setIsLight] = useState(theme === "light");

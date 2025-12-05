@@ -14,6 +14,12 @@ import { Button } from "../ui/button.tsx"
 import { CircleQuestionMark } from "lucide-react"
 import { formatCurrency } from "@/lib/utils/index.ts"
 
+/**
+ * Componente modal para mostrar los detalles de un producto.
+ * @param product El producto cuyos detalles se van a mostrar.
+ * @param isFavorite Indica si el producto es un favorito.
+ * @returns El componente modal de detalles del producto.
+ */
 const ProductDetailModal = ({
   product,
   isFavorite
