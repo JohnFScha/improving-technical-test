@@ -1,4 +1,4 @@
-import { MoreHorizontal } from "lucide-react"
+import { MoreHorizontal, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
@@ -19,7 +19,13 @@ import ProductDetailModal from "@/components/modals/product-detail.tsx"
  * Definicion de las columnas para la tabla de productos.
  * @return Un array de definiciones de columnas para la tabla de productos.
  */
-export const columns: DataTableColumn<Product, unknown>[] = [
+export const columnsFactory = ({
+  toggleFavorite,
+  favorites,
+}: {
+  toggleFavorite: (product: Product) => void;
+  favorites: Product[];
+}): DataTableColumn<Product, unknown>[] => [
   {
     id: "select",
     header: ({ table }) => (
@@ -59,17 +65,6 @@ export const columns: DataTableColumn<Product, unknown>[] = [
       return name.toLowerCase().includes((filterValue as string).toLowerCase())
     }
   },
-  // {
-  //   id: "description",
-  //   accessorKey: "description",
-  //   meta: { title: "Descripción" },
-  //   header: ({ column }) => <DataTableColumnHeader column={column} title="Descripción" />,
-  //   cell: ({ row }) => <div className="text-center">{row.getValue("description")}</div>,
-  //   filterFn: (row, _columnId, filterValue) => {
-  //     const description = row.getValue("description") as string
-  //     return description.toLowerCase().includes((filterValue as string).toLowerCase())
-  //   }
-  // },
   {
     id: "price",
     accessorKey: "price",
@@ -124,21 +119,25 @@ export const columns: DataTableColumn<Product, unknown>[] = [
       return category.toLowerCase().includes((filterValue as string).toLowerCase())
     }
   },
-  // {
-  //   id: "isFavorite",
-  //   accessorKey: "isFavorite",
-  //   meta: { title: "Favorito" },
-  //   header: ({ column }) => <DataTableColumnHeader column={column} title="Favorito" />,
-  //   cell: ({ row }) => {
-  //     const isFavorite = row.getValue("isFavorite") as boolean
-  //     return <Checkbox checked={isFavorite} disabled />
-  //   },
-  //   filterFn: (row, _columnId, filterValue) => {
-  //     const isFavorite = row.getValue("isFavorite") as boolean
-  //     const filterBool = (filterValue as string).toLowerCase() === "true"
-  //     return isFavorite === filterBool
-  //   }
-  // },
+  {
+    id: "isFavorite",
+    accessorKey: "isFavorite",
+    meta: { title: "Favorito" },
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Favorito" />,
+    cell: ({ row }) => {
+      const product = row.original
+      const isFav = favorites.some((fav) => fav.id === product.id)
+      return (
+        <Button
+          variant={"ghost"}
+          size="sm"
+          onClick={() => toggleFavorite(product)}
+        >
+          {isFav ? <Star className="fill-primary" /> : <Star className="fill-transparent" />}
+        </Button>
+      )
+    }
+  },
   {
     id: "actions",
     meta: { title: "Acciones" },
@@ -146,6 +145,7 @@ export const columns: DataTableColumn<Product, unknown>[] = [
     enableHiding: false,
     cell: ({ row }) => {
       const product = row.original
+      const isFav = favorites.some((fav) => fav.id === product.id)
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -163,7 +163,7 @@ export const columns: DataTableColumn<Product, unknown>[] = [
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
-              <ProductDetailModal product={product} />
+              <ProductDetailModal product={product} isFavorite={isFav} />
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

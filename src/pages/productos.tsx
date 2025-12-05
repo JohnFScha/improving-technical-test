@@ -7,10 +7,9 @@ import {
   CardDescription,
 } from "@/components/ui/card.tsx";
 import { DataTable } from "@/components/data-table/index.tsx";
-import { columns } from "@/components/data-table/columns/products.columns.tsx";
 
 export function ProductsPage() {
-  const { data, isLoading, error } = ProductsController();
+  const { data, isLoading, error, columns } = ProductsController();
 
   const renderContent = () => {
     switch (true) {

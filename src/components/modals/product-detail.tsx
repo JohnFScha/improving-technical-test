@@ -16,8 +16,10 @@ import { formatCurrency } from "@/lib/utils/index.ts"
 
 const ProductDetailModal = ({
   product,
+  isFavorite
 }: {
-  product: Product
+  product: Product;
+  isFavorite: boolean;
 }) => {
   return (
     <AlertDialog>
@@ -39,7 +41,7 @@ const ProductDetailModal = ({
             <li>Detalles: {product.description}</li>
             <li>Categoría: {product.category}</li>
             <li>Precio: {formatCurrency(product.price)}</li>
-            <li>Favorito: {product.isFavorite ? "Sí" : "No"}</li>
+            <li>Favorito: {isFavorite ? "Sí" : "No"}</li>
           </ul>   
         </div>
         <AlertDialogFooter>
