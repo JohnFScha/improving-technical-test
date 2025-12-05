@@ -1,0 +1,130 @@
+[
+  {
+    "id": "p1",
+    "name": "Auriculares Inalámbricos Pro",
+    "description": "Auriculares bluetooth con cancelación de ruido y estuche de carga.",
+    "category": "electronics",
+    "price": 129.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p2",
+    "name": "Teclado Mecánico Compacto",
+    "description": "Teclado mecánico 60% con switches rojos y retroiluminación.",
+    "category": "electronics",
+    "price": 89.5,
+    "isFavorite": false
+  },
+  {
+    "id": "p3",
+    "name": "Sudadera “Code & Coffee”",
+    "description": "Sudadera con capucha, unisex, ideal para programar con café.",
+    "category": "clothing",
+    "price": 39.9,
+    "isFavorite": false
+  },
+  {
+    "id": "p4",
+    "name": "Zapatillas Urban Dev",
+    "description": "Zapatillas cómodas para largas sesiones frente al ordenador.",
+    "category": "clothing",
+    "price": 59.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p5",
+    "name": "Lámpara de Escritorio LED",
+    "description": "Lámpara ajustable con luz fría y cálida para tu setup.",
+    "category": "home",
+    "price": 24.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p6",
+    "name": "Silla Ergonómica",
+    "description": "Silla de oficina ergonómica con soporte lumbar ajustable.",
+    "category": "home",
+    "price": 199.0,
+    "isFavorite": false
+  },
+  {
+    "id": "p7",
+    "name": "Clean Code",
+    "description": "Libro clásico sobre buenas prácticas de desarrollo de software.",
+    "category": "books",
+    "price": 32.0,
+    "isFavorite": false
+  },
+  {
+    "id": "p8",
+    "name": "Refactoring",
+    "description": "Libro sobre refactorización de código y diseño incremental.",
+    "category": "books",
+    "price": 45.0,
+    "isFavorite": false
+  },
+  {
+    "id": "p9",
+    "name": "Monitor 27\" QHD",
+    "description": "Monitor de 27 pulgadas con resolución QHD ideal para multitarea.",
+    "category": "electronics",
+    "price": 279.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p10",
+    "name": "Alfombrilla XXL",
+    "description": "Alfombrilla de ratón extendida para teclado y ratón.",
+    "category": "home",
+    "price": 19.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p11",
+    "name": "Camisa Casual",
+    "description": "Camisa cómoda, ideal para reuniones remotas.",
+    "category": "clothing",
+    "price": 29.5,
+    "isFavorite": false
+  },
+  {
+    "id": "p12",
+    "name": "Node.js Design Patterns",
+    "description": "Libro sobre patrones de diseño aplicados a Node.js.",
+    "category": "books",
+    "price": 38.0,
+    "isFavorite": false
+  },
+  {
+    "id": "p13",
+    "name": "Altavoz Bluetooth Portátil",
+    "description": "Altavoz compacto con batería de larga duración.",
+    "category": "electronics",
+    "price": 54.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p14",
+    "name": "Cojín Lumbar",
+    "description": "Cojín para mejorar la postura en la silla de oficina.",
+    "category": "home",
+    "price": 17.99,
+    "isFavorite": false
+  },
+  {
+    "id": "p15",
+    "name": "Camiseta “Ship It”",
+    "description": "Camiseta para celebrar cada deploy a producción.",
+    "category": "clothing",
+    "price": 22.0,
+    "isFavorite": false
+  },
+  {
+    "id": "p16",
+    "name": "Designing Data-Intensive Applications",
+    "description": "Libro sobre sistemas distribuidos y datos a gran escala.",
+    "category": "books",
+    "price": 49.0,
+    "isFavorite": false
+  }
+]
