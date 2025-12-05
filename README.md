@@ -102,3 +102,11 @@ src/
 - **[Lucide React](https://lucide.dev/)** - Iconos
 - **[TanStack Query](https://tanstack.com/query/latest)** - Manejo de estado y caché de datos
 - **[TanStack Table](https://tanstack.com/table/latest)** - Tabla de datos avanzada
+
+## Agradecimientos
+
+Gracias por la oportunidad de realizar esta prueba técnica. He disfrutado mucho trabajando en este proyecto y aplicando mis conocimientos en React y TypeScript. Espero que la solución propuesta cumpla con sus expectativas y estoy abierto a cualquier feedback o sugerencia para mejorarla. Nos vemos mañana en la entrevista técnica.
+
+<div align="center">
+  Hecho con ❤️ por Juan Francisco Schallibaum
+<div>
