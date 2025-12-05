@@ -1,4 +1,4 @@
-# Prueba Técnica - Improving Inc.
+# Prueba Técnica - Improving
 
 
 Aplicación de gestión de productos desarrollada con React, TypeScript y Vite.
