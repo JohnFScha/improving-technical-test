@@ -7,6 +7,7 @@ import {
   CardDescription,
 } from "@/components/ui/card.tsx";
 import { DataTable } from "@/components/data-table/index.tsx";
+import { Spinner } from "@/components/ui/spinner.tsx";
 
 export function ProductsPage() {
   const { data, isLoading, error, columns } = ProductsController();
@@ -14,7 +15,11 @@ export function ProductsPage() {
   const renderContent = () => {
     switch (true) {
       case isLoading:
-        return <div>Cargando productos...</div>;
+        return (
+          <div className="flex justify-center items-center h-32">
+            <Spinner className="size-10" />
+          </div>
+        );
       case !!error:
         return <div>Error al cargar los productos.</div>;
       case data?.length === 0:
